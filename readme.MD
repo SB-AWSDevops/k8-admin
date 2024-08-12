@@ -1,4 +1,5 @@
 ## Here is a simplified high-level tree format of what happens when you run kubectl get nodes in an EKS cluster:
+
 ```
 kubectl get nodes
 |
@@ -20,3 +21,4 @@ kubectl get nodes
 |
 |-- 5. **Display**
 |   |-- `kubectl` displays node information in your terminal.
+```
