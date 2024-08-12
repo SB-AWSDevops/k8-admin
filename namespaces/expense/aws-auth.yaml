@@ -1,0 +1,19 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::992382575331:role/eksctl-EXPENSE-nodegroup-spot-NodeInstanceRole-CcNVGebyiMTp
+      username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - groups:
+      - expense-pod-reader
+      userarn: arn:aws:iam::992382575331:user/suri
+      username: suri
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-08-12T05:05:24Z"
+  name: aws-auth
+  namespace: kube-system
+  uid: 3ac3e6c1-b94c-4ce8-86b6-ce639b2bac6f
