@@ -1,5 +1,5 @@
 ## Here is a simplified high-level tree format of what happens when you run kubectl get nodes in an EKS cluster:
-
+```
 kubectl get nodes
 |
 |-- 1. **Authentication**
